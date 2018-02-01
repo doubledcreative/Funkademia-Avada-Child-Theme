@@ -1,0 +1,259 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TRANSMIT CONSULTING
+
+Theme Name: Avada Child Theme
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+CONTENTS
+
+- Header
+- Footer
+- Media Queries
+	- 1280px (Mobile Header Switch)
+	- 800px
+	- 500px
+	
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* HEADER */
+
+/* Main Header */
+.fusion-header-wrapper{background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); background:linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%);
+	.fusion-logo-center{
+		.fusion-header{padding-left: 20px!important; padding-right: 20px!important;
+			.fusion-row{
+				.fusion-main-menu{
+					.fusion-menu, .fusion-mobile-menu{
+						.menu-item{	
+							a{text-transform: uppercase; .font-bold(); -webkit-font-smoothing: antialiased!important; .text-shadow();
+								.menu-text{
+									.fa{font-size: 28px; vertical-align: text-bottom;}
+								}
+							}	
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Sticky Header */
+.fusion-is-sticky{
+	.fusion-logo-center{
+		.fusion-header{
+			.fusion-row{
+				.fusion-sticky-menu{
+					.fusion-menu{
+						.fusion-logo{display: none;}
+						.menu-item{
+							a{text-shadow: none!important;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* NEWSLETTER */
+
+.fusion-footer{
+	.fusion-footer-widget-area{padding: 0px;
+		.footer-newsletter{padding: 0px;
+			.fusion-row{.border(@border: 1px 0 0 0);
+				.fusion-layout-column{padding: 100px 30px 0; max-width: 500px; margin: 0 auto;
+					.fusion-title{
+						h4{padding-bottom: 30px!important;}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* COPYRIGHT */
+
+.fusion-footer{
+	.fusion-footer-copyright-area{padding: 0px;
+		.fusion-row{
+			.fusion-copyright-content{padding: 0 30px 100px;
+				.fusion-copyright-notice{margin: 5px 0 25px;
+					.ddc-copyright{.font-light(); -webkit-font-smoothing: subpixel-antialiased!important;
+						a{.font-light(); -webkit-font-smoothing: subpixel-antialiased!important;
+							&:hover{color: @yellow;}
+						}
+					}
+				}
+				
+				.fusion-social-links-footer{margin-top: 0!important;
+					.fusion-social-networks-wrapper{margin-top: 0!important;
+						a{.boxed-social-icons();}
+					}
+				}
+				
+			}	
+		}
+	}
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1280px ///////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1280px) {
+	
+	
+	/* MOBILE HEADER */
+
+	/* Mobile Header */
+	.fusion-mobile-menu-design-modern{
+		.fusion-header{
+			.fusion-row{
+				.fusion-mobile-menu-icons{
+					.fusion-icon{font-size: 25px; padding: 15px 20px 15px 50px; margin: -12px -23px;}
+				}
+				.fusion-mobile-nav-holder{
+					.fusion-mobile-menu{
+						.fusion-mobile-nav-item{
+							a{
+								&:hover{
+									.menu-text{color: @green;}
+								}
+								.menu-text{.font-bold(); text-transform: uppercase!important; -webkit-font-smoothing: antialiased!important;
+									.fa{font-size: 26px; vertical-align: sub;}
+								}
+							}	
+						}	
+						.fusion-mobile-current-nav-item{
+							a{
+								.menu-text{color: @green;}
+							}	
+						}	
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 800px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 800px) {
+
+
+	/* NEWSLETTER */
+	
+	.fusion-footer{
+		.fusion-footer-widget-area{
+			.footer-newsletter{
+				.fusion-row{
+					.fusion-layout-column{padding: 80px 30px 0; display: inline-block;
+						.fusion-title{
+							h4{padding-bottom: 10px!important;}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+	/* COPYRIGHT */
+	
+	.fusion-footer{
+		.fusion-footer-copyright-area{margin-top: 10px!important;
+			.fusion-row{
+				.fusion-copyright-content{padding: 0 30px 80px;
+					.fusion-copyright-notice{margin: -5px 0 15px;}
+
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 500px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 500px) {
+	
+	
+	/* NEWSLETTER */
+	
+	.fusion-footer{
+		.fusion-footer-widget-area{
+			.footer-newsletter{
+				.fusion-row{
+					.fusion-layout-column{padding: 60px 30px 0; max-width: 100%;}
+				}
+			}
+		}
+	}
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/* COPYRIGHT */
+	
+	.fusion-footer{
+		.fusion-footer-copyright-area{margin-top: 10px!important;
+			.fusion-row{
+				.fusion-copyright-content{padding: 0 30px 50px;
+					.fusion-copyright-notice{margin: -5px 0 15px;}
+				}
+			}
+		}
+	}	
+	
+	
+}
