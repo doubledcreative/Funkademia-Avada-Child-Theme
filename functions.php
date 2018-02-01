@@ -116,6 +116,17 @@ return true;
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+/* Change Gravity Button Type To FontAwesome */
+
+add_filter("gform_submit_button_2", "form_submit_button", 10, 2);
+function form_submit_button($button, $form){
+return "<button class='button' id='gform_submit_button_{$form["id"]}'><i class='fa fa-fw fa-envelope'></i></button>";
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /* SVG Support */	
 
 
@@ -159,3 +170,19 @@ function last_mod_header($headers) {
                 }
         }
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* Scroll to Gravity Form on Confirmation */
+
+add_filter( 'gform_confirmation_anchor', function() {
+    return 120;
+} );
